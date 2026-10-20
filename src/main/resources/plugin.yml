@@ -1,0 +1,40 @@
+name: Zamek
+version: 2.0
+main: pl.zamek.ZamekPlugin
+api-version: '1.21'
+description: Zamek, Paleczka lewitki, lampion, Pole smierci, usuwacz pajeczyn i czyszczenie blokow.
+commands:
+  zamek:
+    description: Daje przedmiot Zamek
+    usage: /zamek [gracz]
+    permission: zamek.give
+  paleczka:
+    description: Daje przedmiot Paleczka lewitki
+    usage: /paleczka [gracz]
+    permission: zamek.give
+  lampion:
+    description: Daje przedmiot Lampion
+    usage: /lampion [gracz]
+    permission: zamek.give
+  polesmierci:
+    description: Daje przedmiot Pole smierci
+    usage: /polesmierci [gracz]
+    permission: zamek.give
+  usuwaczpajeczyn:
+    description: Daje przedmiot Usuwacz pajeczyn
+    usage: /usuwaczpajeczyn [gracz]
+    permission: zamek.give
+  usuwanieblokow:
+    description: Wlacza/wylacza cykliczne usuwanie welny, banerow i pajeczyn
+    usage: /usuwanieblokow
+    permission: zamek.admin
+permissions:
+  zamek.give:
+    description: Pozwala dawac przedmioty komendami
+    default: op
+  zamek.admin:
+    description: Pozwala uzyc /usuwanieblokow
+    default: op
+  zamek.use:
+    description: Pozwala uzywac przedmiotow
+    default: true
